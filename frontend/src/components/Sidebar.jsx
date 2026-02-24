@@ -1,26 +1,32 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import {
-  LayoutDashboard,
-  Package,
-  ShoppingCart,
-  TrendingUp,
+import { 
+  LayoutDashboard, 
+  Package, 
+  ShoppingCart, 
+  TrendingUp, 
+  Bot, 
   Settings,
-  Bot,
-  Store,
+  Building2, 
+  Receipt, 
+  Tag,
+  Store 
 } from 'lucide-react';
 
 const Sidebar = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-    { path: '/inventory', icon: Package, label: 'Inventory' },
-    { path: '/orders', icon: ShoppingCart, label: 'Orders' },
-    { path: '/insights', icon: TrendingUp, label: 'Insights' },
-    { path: '/agents', icon: Bot, label: 'Agents' },
-    { path: '/settings', icon: Settings, label: 'Settings' },
-  ];
+  { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { path: '/inventory', icon: Package, label: 'Inventory' },
+  { path: '/orders', icon: ShoppingCart, label: 'Orders' },
+  { path: '/vendors', icon: Building2, label: 'Vendors' },
+  { path: '/sales', icon: Receipt, label: 'Sales' },
+  { path: '/pricing', icon: Tag, label: 'Pricing' },
+  { path: '/insights', icon: TrendingUp, label: 'Insights' },
+  { path: '/agents', icon: Bot, label: 'Agents' },
+  { path: '/settings', icon: Settings, label: 'Settings' },
+];
 
   return (
     <aside className="w-[15%] min-w-[200px] h-screen bg-card border-r border-border flex flex-col">

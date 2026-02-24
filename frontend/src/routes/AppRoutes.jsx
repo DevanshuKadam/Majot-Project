@@ -7,6 +7,9 @@ import Insights from '@/pages/Insights/Insights';
 import Settings from '@/pages/Settings/Settings';
 import Agents from '@/pages/Agents/Agents';
 import DashboardLayout from '@/components/DashboardLayout';
+import VendorDirectory from '@/pages/Vendors/Vendors';
+import CustomerSales from '@/pages/CustomerSales/CustomerSales';
+import PricingManagement from '@/pages/Pricing/Pricing';
 
 const AppRoutes = () => {
   return (
@@ -23,6 +26,9 @@ const AppRoutes = () => {
           <Route path="/insights" element={<Insights />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/agents" element={<Agents />} />
+          <Route path="/vendors" element={<VendorDirectory />} />
+          <Route path="/sales" element={<CustomerSales />} />
+          <Route path="/pricing" element={<PricingManagement />} />
         </Route>
         
         {/* Catch all - redirect to landing */}
